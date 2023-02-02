@@ -1,7 +1,7 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
-import { StatusBar, StyleSheet, Text, View } from 'react-native';
+import { Button, StatusBar, StyleSheet, Text, View } from 'react-native';
 import CategoryScreen from './screens/CategoryScreen';
 import MealDetailScreen from './screens/MealDetailScreen';
 import MealsOverviewScreen from './screens/MealsOverviewScreen';
@@ -34,7 +34,6 @@ const App = () => {
           <Stack.Screen 
             name='MealDetail'
             component={MealDetailScreen}
-            options={{title: 'Details'}}
           />
         </Stack.Navigator>
       </NavigationContainer>
